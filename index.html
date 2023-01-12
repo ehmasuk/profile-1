@@ -28,10 +28,15 @@
         <div class="profile-img-wraper">
             <div class="cover-img">
                 <img src="https://images.pexels.com/photos/1029604/pexels-photo-1029604.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="cover-img">
+                <i class="fas fa-camera" data-toggle="tooltip" data-placement="right" title="Change Cover Photo" ></i>
             </div>
             <div class="profile-img">
                 <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="" class="img-fluid">
+                <div class="change-profile-img">
+                    <i class="fas fa-camera" data-toggle="tooltip" data-placement="bottom" title="Change Profile Photo"></i>
+                </div>
             </div>
+            
             <div class="info">
                 <h2 class="name">John</h2>
                 <div class="row px-3 justify-content-between align-items-center">
@@ -63,11 +68,12 @@
 <section class="nav-section">
     <div class="container">
         <div class="row px-4 justify-content-between">
-            <a href="#">Timeline</a>
-            <a href="#" class="active">Profile</a>
-            <a href="#">Connections <span>130</span></a>
-            <a href="#">Groups <span>13</span></a>
-            <a href="#">Forums</a>
+            <a href="#">Histórico</a>
+            <a href="#" class="active">Perfil</a>
+            <a href="#">Conexiones <span>130</span></a>
+            <a href="#">Grupos <span>13</span></a>
+            <a href="#">Mis historias</a>
+            <a href="#">Comunidad</a>
         </div>
     </div>
 </section>
@@ -81,29 +87,29 @@
         <div class="profile-content-info-wraper">
             <div class="title">
                 <div class="row align-items-center justify-content-between">
-                    <p>Genaral Information</p>
+                    <p>Información general</p>
                     <button class="btn edit-btn">Edit</button>
                 </div>
             </div>
             <div class="content-infos">
                 <div class="row mt-4">
-                    <div class="col p-0 tag">First Name</div>
+                    <div class="col p-0 tag">Nombre</div>
                     <div class="col main-info">John</div>
                 </div>
                 <div class="row mt-4">
-                    <div class="col p-0 tag">Last Name</div>
+                    <div class="col p-0 tag">Apellido</div>
                     <div class="col main-info">John</div>
                 </div>
                 <div class="row mt-4">
-                    <div class="col p-0 tag">Nick Name</div>
+                    <div class="col p-0 tag">Seudónimo</div>
                     <div class="col main-info">John</div>
                 </div>
                 <div class="row mt-4">
-                    <div class="col p-0 tag">Birth Date</div>
+                    <div class="col p-0 tag">Fecha de nacimiento</div>
                     <div class="col main-info">John</div>
                 </div>
                 <div class="row mt-4">
-                    <div class="col p-0 tag">Gender</div>
+                    <div class="col p-0 tag">Género</div>
                     <div class="col main-info">John</div>
                 </div>
             </div>
@@ -156,13 +162,22 @@
 
 
 
-
-
-
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip() 
+        })
+</script>
 
 
 
     </body>
 </html>
+
+
+
+
+
+

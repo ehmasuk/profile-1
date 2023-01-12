@@ -40,6 +40,7 @@ a:hover{
 
 .profile-header{
     background-color: #FAF9F7;
+    padding-top: 20px;
 }
 .profile-header .profile-img-wraper{
     position: relative;
@@ -66,6 +67,54 @@ a:hover{
     border-radius: 50%;
     overflow: hidden;
     background-color: #fff;
+}
+.profile-header .profile-img-wraper .profile-img .change-profile-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    display: none;
+}
+.profile-header .profile-img-wraper .profile-img .change-profile-img i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    z-index: 3;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.profile-header .profile-img-wraper .profile-img:hover>.change-profile-img{
+    display: block;
+}
+.profile-header .profile-img-wraper .cover-img i{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: #fff;
+    z-index: 3;
+    height: 35px;
+    width: 40px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 25px;
+    border-radius: 20%;
+    cursor: pointer;
+    display: none;
+}
+.profile-header .profile-img-wraper .cover-img:hover>i{
+    display: block;
 }
 .profile-header .profile-img-wraper .profile-img img{
     height: 200px;
@@ -110,7 +159,7 @@ a:hover{
     display: inline-block;
     color: #fff;
     text-align: center;
-    line-height: 35px;
+    line-height: 39px;
 }
 .profile-header .profile-img-wraper .info .social-links a i{
     font-size: 17px;
@@ -140,6 +189,7 @@ a:hover{
 }
 .nav-section .active{
     border-bottom: 3px solid #794EDA;
+    font-weight: 600;
 }
 
 .profile-content {
@@ -181,3 +231,4 @@ a:hover{
     font-weight: 600;
     text-align: justify;
 }
+
