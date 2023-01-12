@@ -54,6 +54,7 @@ a:hover{
     top: 0;
     max-height: 250px;
     width: 100%;
+    object-fit: cover;
 }
 .profile-header .profile-img-wraper .profile-img{
     position: absolute;
@@ -71,6 +72,7 @@ a:hover{
     width: 200px;
     border-radius: 50%;
     padding: 3px;
+    object-fit: cover;
 }
 .profile-header .profile-img-wraper .info{
     position: absolute;
